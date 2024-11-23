@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #000000;
+  color: #A7A7A7;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 1440px;
+  padding: 1.2rem 4rem;
+  margin: 0 auto;
+}
+/* header styles start */
+.header-container{
+  color: #A7A7A7;
+   border-bottom: 2px Solid rgba(66, 68, 110, 1);
+   margin bottom: 3rem;
+}
+.header-nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header-nav img{
+  width: 7%;
+}
+.header-nav-lists{
+  display: flex;
+  gap: 2rem;
+} 
+.header-icons span{
+ margin-left: 1rem;
+ font-size: 1.5rem;
+ cursor: pointer;
+}
+/* header styles end */
+/* hero section styles start */
+.hero-section-container{
+     font-family: "Roboto";
+     margin: 7rem;
+}
+.hero-section-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+   color: #A7A7A7;
+}
+.left-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+.left-content h3{
+font-size: 39px;
+font-weight: 700;
+line-height: 45.7px;
+text-align: left; 
+
+}
+.left-content h2{
+font-size: 70px;
+font-weight: 700;
+line-height: 91.41px;
+letter-spacing: 0.1em;
+color: rgba(245, 10, 135, 0.83);
+}
+.left-content h4{
+font-size: 40px;
+font-weight: 700;
+line-height: 66.8px;
+}
+.right-content{
+  width: 60%;
+}
+/* hero section styles end */
+/* tech-stack styles start */
+.tech-stack-container{
+    font-family: "Poppins";
+    margin: 5rem;
+}
+.tech-stack-content{
+  display: flex;
+  flex-direction: column;
+}
+.top-tech-stack h2{
+font-size: 40px;
+font-weight: 700;
+line-height: 26px;
+text-align: center; 
+color: fuchsia;
+}
+.top-tech-stack p{
+  margin-top: 2rem;
+font-size: 25px;
+font-weight: 400;
+line-height: 26px;
+text-align: center; 
+color: #A7A7A7;
+}
+.bottom-tech-stack{ 
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.tech-stack-icons{ 
+  font-size: 6rem;
+}
+.bottom-tech-stack img{
+  width: 10%;
+}
+/* tech-stack styles end */
+/* projects styles start */ 
+.projects-content{
+  font-family: "Poppins"; 
+  margin: 5rem;
+}
+.projects-title h2{
+  margin-bottom: 2rem;
+font-size: 48px;
+font-weight: 700;
+line-height: 26px;
+text-align: center; 
+color: fuchsia;
+
+}
+.projects-title p{
+font-size: 32px;
+font-weight: 400;
+line-height: 26px;
+text-align: center; 
+}
+.projects-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+.project-card{
+background: rgba(54, 54, 54, 1); 
+width: 80%;
+border-radius: 20px ;
+padding: 1rem;
+margin: 2rem; 
+}   
+.card-content {
+    padding: 12px;
+}
+
+.card-title{
+  margin-top: 1rem; 
+}
+.card-desc{
+  margin-top: 1rem; 
+font-size: 18px;
+font-weight: 300;
+line-height: 26px; 
+}
+.card-text{
+  margin-top: 1rem;
+ font-size: 14px;
+ font-weight: 300;
+ line-height: 26px; 
+}
+.links{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #ffffff;
+}
+.links span{
+  margin-right: 0.2rem;
+  cursor: pointer;
+}      
+/* projects styles end */
+/* contact styles start */
+.contact-section{
+   font-family: "DM Sans";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-section img{
+  width: 7%;
+}
+.tel, .mail{
+ font-size: 14px;
+ font-weight: 300;
+ cursor: pointer;
+}
+.contact-icons{
+  margin: 1rem;
+ font-size: 2rem;
+ cursor: pointer;
+}
+/* contact styles end */
+/* footer section start */
+.footer-section{
+  font-family: "DM Sans";
+  border-top: 2px Solid rgba(66, 68, 110, 1);
+  opacity: 0.3px;
+
+}
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-nav{ 
+font-size: 18px;
+font-weight: 400;
+line-height: 26px;
+text-align: left; 
+}
+.footer-nav-lists{
+  display: flex;
+  gap: 2rem;
+}
+.footer-content p{
+  font-family: Poppins;
+font-size: 18px;
+font-weight: 400;
+line-height: 26px;
+}
+/* footer section end */
+ @media (max-width: 768px) {
+  .projects-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+    .container {
+        padding: 0 1rem;
+    }
+
+    .header-nav-lists {
+        display: none;
+    }
+
+    .header-icons {
+        display: block;
+    }
+
+    .hero-section-content {
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .left-content {
+        text-align: center;
+    }
+  
+ }
